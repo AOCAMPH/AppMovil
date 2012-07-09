@@ -1,14 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BE", "BE", "{4327C7CC-1932-4095-8310-B96A9BCC51F2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{CE5693B2-8EFD-441D-91DF-5576558F1FDE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{78BF3DB7-4106-43AE-885B-99DCEE24A1DA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{6B871C5B-EF36-4610-80BD-082216A28684}"
-EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BusinessEntities", "BE\BusinessEntities\BusinessEntities.vbproj", "{88F70FBE-EAFC-4A16-A57E-3990053C7848}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BusinessLayer", "BL\BusinessLayer\BusinessLayer.vbproj", "{96CBF9FB-4D2C-4E35-927D-1EF5630B0273}"
@@ -16,11 +8,6 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DataAccessLayer", "DAL\DataAccessLayer\DataAccessLayer.vbproj", "{F6C25DAB-6DFC-4337-87BD-0981D480224D}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UserInterface", "UI\UserInterface\UserInterface.vbproj", "{452B29BE-D3B8-4865-96CC-AE927247008A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{4F88D1CA-600F-4EEA-BAF5-26192D960FF4}"
-	ProjectSection(SolutionItems) = preProject
-		G:\Desarrollo en capas\SOC-DB.sql = G:\Desarrollo en capas\SOC-DB.sql
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
