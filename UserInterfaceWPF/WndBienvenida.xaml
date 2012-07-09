@@ -1,0 +1,13 @@
+﻿<Window x:Class="WndBienvenida"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WndBienvenida" Height="150" Width="650">
+    <Grid>
+        <Button HorizontalAlignment="Left" Margin="77,12,0,12" Name="btnInicio" Width="107">Inicio
+        <Image Source="F:\Images\myImage.png" />
+        </Button>
+        <Button Margin="209,12,312,12" Name="Button2">Mantenimientos</Button>
+        <Button HorizontalAlignment="Right" Margin="0,12,179,12" Name="Button3" Width="107">Ayuda</Button>
+        <Button HorizontalAlignment="Right" Margin="0,12,48,12" Name="Button4" Width="107">Salir</Button>
+    </Grid>
+</Window>

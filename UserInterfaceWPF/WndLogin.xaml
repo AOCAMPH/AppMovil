@@ -1,0 +1,15 @@
+﻿<Window x:Class="WndLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WndLogin" Height="250" Width="604">
+    <Grid Width="446" Height="171">
+        <Button Height="23" HorizontalAlignment="Left" Margin="88,0,0,36" Name="btnIngresar" VerticalAlignment="Bottom" Width="75">Ingresar</Button>
+        <Button Height="23" Margin="217,0,155,36" Name="btnCancelar" VerticalAlignment="Bottom">Cancelar</Button>
+        <Label Height="28" HorizontalAlignment="Left" Margin="64,23,0,0" Name="Label1" VerticalAlignment="Top" Width="120">Usuario
+        </Label>
+        <Label HorizontalAlignment="Left" Margin="64,57,0,0" Name="Label2" Width="120" Height="28" VerticalAlignment="Top">Clave</Label>
+        <TextBox Height="23" Margin="156,23,170,0" Name="txtUsuario" VerticalAlignment="Top" />
+        <TextBox Height="23" Margin="156,57,170,0" Name="txtClave" VerticalAlignment="Top" />
+    </Grid>
+   
+</Window>
