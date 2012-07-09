@@ -1,0 +1,15 @@
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\BusinessLayer.xml
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\BusinessEntities.dll
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\DataAccessLayer.dll
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\DataAccessLayer.xml
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\BusinessEntities.pdb
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Debug\BusinessEntities.xml
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Debug\BusinessLayer.Resources.resources
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Debug\BusinessLayer.vbproj.GenerateResource.Cache
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Debug\BusinessLayer.xml
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Debug\BusinessLayer.pdb

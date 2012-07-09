@@ -1,0 +1,9 @@
+D:\Program Files\NTIER-WF\BE\BusinessEntities\bin\Debug\BusinessEntities.dll
+D:\Program Files\NTIER-WF\BE\BusinessEntities\bin\Debug\BusinessEntities.pdb
+D:\Program Files\NTIER-WF\BE\BusinessEntities\bin\Debug\BusinessEntities.xml
+D:\Program Files\NTIER-WF\BE\BusinessEntities\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\NTIER-WF\BE\BusinessEntities\obj\Debug\BusinessEntities.Resources.resources
+D:\Program Files\NTIER-WF\BE\BusinessEntities\obj\Debug\BusinessEntities.vbproj.GenerateResource.Cache
+D:\Program Files\NTIER-WF\BE\BusinessEntities\obj\Debug\BusinessEntities.dll
+D:\Program Files\NTIER-WF\BE\BusinessEntities\obj\Debug\BusinessEntities.xml
+D:\Program Files\NTIER-WF\BE\BusinessEntities\obj\Debug\BusinessEntities.pdb

@@ -1,0 +1,14 @@
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Release\ResolveAssemblyReference.cache
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Release\DataAccessLayer.Resources.resources
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Release\DataAccessLayer.vbproj.GenerateResource.Cache
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\DataAccessLayer.dll
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\DataAccessLayer.xml
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\BusinessEntities.dll
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\BusinessEntities.pdb
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\BusinessEntities.xml
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Release\DataAccessLayer.dll
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Release\DataAccessLayer.xml
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Release\DataAccessLayer.pdb
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\DataAccessLayer.dll.CodeAnalysisLog.xml
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\DataAccessLayer.dll.lastcodeanalysissucceeded

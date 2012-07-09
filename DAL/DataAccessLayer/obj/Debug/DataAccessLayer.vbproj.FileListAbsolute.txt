@@ -1,0 +1,12 @@
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Debug\DataAccessLayer.xml
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Debug\BusinessEntities.dll
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Debug\BusinessEntities.pdb
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Debug\BusinessEntities.xml
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.Resources.resources
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.vbproj.GenerateResource.Cache
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.xml
+D:\Program Files\NTIER-WF\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="D:\Program Files\NTIER-WF\UI\UserInterface\bin\Release\UserInterface.exe">
+   <Modules>
+    <Module Name="userinterface.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'UserInterface.exe' with a strong name key.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'UserInterface.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Because assembly 'UserInterface.exe' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="UserInterface">
+       <Types>
+        <Type Name="form2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="form" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'form' in type name 'form2' by changing it to 'Form'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#btnActualizar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="85">Modify 'form2.btnActualizar_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="83">Change 'form2.btnActualizar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="88">Change 'form2.btnActualizar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnBusca_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToString(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="267">Because the behavior of 'Convert.ToString(Object)' could vary based on the current user's locale settings, replace this call in 'form2.btnBusca_Click(Object, EventArgs)' with a call to 'Convert.ToString(Object, IFormatProvider)'. If the result of 'Convert.ToString(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnGrabar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="45">Modify 'form2.btnGrabar_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="43">Change 'form2.btnGrabar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="48">Change 'form2.btnGrabar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Button3_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="108">Modify 'form2.Button3_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="101">Change 'form2.Button3_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="108">Change 'form2.Button3_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="111">Change 'form2.Button3_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CargarOpcion()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Cargar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="167">Correct the spelling of 'Cargar' in member name 'form2.CargarOpcion()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Opcion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="167">Correct the spelling of 'Opcion' in member name 'form2.CargarOpcion()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CargarPais()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Cargar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="162">Correct the spelling of 'Cargar' in member name 'form2.CargarPais()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Pais" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="162">Correct the spelling of 'Pais' in member name 'form2.CargarPais()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Form1_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="10">Because the behavior of 'String.ToUpper()' could vary based on the current user's locale settings, replace this call in 'form2.Form1_Load(Object, EventArgs)' with a call to 'String.ToUpper(CultureInfo)'. If the result of 'String.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#limpiar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="limpiar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="137">Correct the casing of 'limpiar' in member name 'form2.limpiar()' by changing it to 'Limpiar'.</Issue>
+            </Message>
+            <Message Id="limpiar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="137">Correct the spelling of 'limpiar' in member name 'form2.limpiar()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MostrarBotones()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Botones" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="176">Correct the spelling of 'Botones' in member name 'form2.MostrarBotones()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Mostrar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmCliente.vb" Line="176">Correct the spelling of 'Mostrar' in member name 'form2.MostrarBotones()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FrmBienvenida" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Bienvenida" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bienvenida' in type name 'FrmBienvenida'.</Issue>
+          </Message>
+          <Message Id="Frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Frm' in type name 'FrmBienvenida'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#FrmBienvenida_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmBienvenida.vb" Line="13">Because the behavior of 'String.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FrmBienvenida.FrmBienvenida_Load(Object, EventArgs)' with a call to 'String.ToUpper(CultureInfo)'. If the result of 'String.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmConsultaOrdenes" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="frm" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'frm' in type name 'frmConsultaOrdenes' by changing it to 'Frm'.</Issue>
+          </Message>
+          <Message Id="Consulta" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Consulta' in type name 'frmConsultaOrdenes'.</Issue>
+          </Message>
+          <Message Id="Ordenes" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Ordenes' in type name 'frmConsultaOrdenes'.</Issue>
+          </Message>
+          <Message Id="frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'frm' in type name 'frmConsultaOrdenes'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#cargar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="cargar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="frmConsultaOrdenes.vb" Line="7">Correct the casing of 'cargar' in member name 'frmConsultaOrdenes.cargar()' by changing it to 'Cargar'.</Issue>
+            </Message>
+            <Message Id="cargar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="frmConsultaOrdenes.vb" Line="7">Correct the spelling of 'cargar' in member name 'frmConsultaOrdenes.cargar()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FrmConsultaProducto" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Consulta" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Consulta' in type name 'FrmConsultaProducto'.</Issue>
+          </Message>
+          <Message Id="Frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Frm' in type name 'FrmConsultaProducto'.</Issue>
+          </Message>
+          <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Producto' in type name 'FrmConsultaProducto'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#btnBuscar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmConsultaProducto.vb" Line="9">Modify 'FrmConsultaProducto.btnBuscar_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmConsultaProducto.vb" Line="11">Change 'FrmConsultaProducto.btnBuscar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FrmConsultarCliente" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Cliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Cliente' in type name 'FrmConsultarCliente'.</Issue>
+          </Message>
+          <Message Id="Consultar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Consultar' in type name 'FrmConsultarCliente'.</Issue>
+          </Message>
+          <Message Id="Frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Frm' in type name 'FrmConsultarCliente'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#btnBuscar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Nombre" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmConsultarCliente.vb" Line="13">'FrmConsultarCliente.btnBuscar_Click(Object, EventArgs)' declares a variable, 'Nombre', of type 'String', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FrmListadoOrden" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Frm' in type name 'FrmListadoOrden'.</Issue>
+          </Message>
+          <Message Id="Listado" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Listado' in type name 'FrmListadoOrden'.</Issue>
+          </Message>
+          <Message Id="Orden" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Orden' in type name 'FrmListadoOrden'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FrmLogin" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Frm' in type name 'FrmLogin'.</Issue>
+          </Message>
+          <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Replace the term 'Login' in type name 'FrmLogin' with the preferred alternate 'LogOn'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#btnLogin_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmLogin.vb" Line="16">Modify 'FrmLogin.btnLogin_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmLogin.vb" Line="13">Because the behavior of 'String.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FrmLogin.btnLogin_Click(Object, EventArgs)' with a call to 'String.ToUpper(CultureInfo)'. If the result of 'String.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmLogin.vb" Line="13">Change 'FrmLogin.btnLogin_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmLogin.vb" Line="19">Change 'FrmLogin.btnLogin_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#limpiar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="limpiar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmLogin.vb" Line="28">Correct the casing of 'limpiar' in member name 'FrmLogin.limpiar()' by changing it to 'Limpiar'.</Issue>
+            </Message>
+            <Message Id="limpiar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmLogin.vb" Line="28">Correct the spelling of 'limpiar' in member name 'FrmLogin.limpiar()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FrmOrden" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Frm' in type name 'FrmOrden'.</Issue>
+          </Message>
+          <Message Id="Orden" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Orden' in type name 'FrmOrden'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="10">Be sure to set the DataTable Locale property wherever 'FrmOrden.New()' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnActualizar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="172">Modify 'FrmOrden.btnActualizar_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDateTime(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="164">Because the behavior of 'Convert.ToDateTime(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnActualizar_Click(Object, EventArgs)' with a call to 'Convert.ToDateTime(String, IFormatProvider)'. If the result of 'Convert.ToDateTime(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="165">Because the behavior of 'Convert.ToDateTime(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnActualizar_Click(Object, EventArgs)' with a call to 'Convert.ToDateTime(String, IFormatProvider)'. If the result of 'Convert.ToDateTime(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="159">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnActualizar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="170">Change 'FrmOrden.btnActualizar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="175">Change 'FrmOrden.btnActualizar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnEliminar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="192">Modify 'FrmOrden.btnEliminar_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="182">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnEliminar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="184">Change 'FrmOrden.btnEliminar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="190">Change 'FrmOrden.btnEliminar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="195">Change 'FrmOrden.btnEliminar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnGrabar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToDateTime(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="131">Because the behavior of 'Convert.ToDateTime(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToDateTime(String, IFormatProvider)'. If the result of 'Convert.ToDateTime(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="132">Because the behavior of 'Convert.ToDateTime(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToDateTime(String, IFormatProvider)'. If the result of 'Convert.ToDateTime(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDecimal(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="143">Because the behavior of 'Convert.ToDecimal(Object)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToDecimal(Object, IFormatProvider)'. If the result of 'Convert.ToDecimal(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="139">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="140">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="141">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="142">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="126">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="137">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToString(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="138">Because the behavior of 'Convert.ToString(Object)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToString(Object, IFormatProvider)'. If the result of 'Convert.ToString(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="152">Change 'FrmOrden.btnGrabar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#cargar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="cargar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="233">Correct the casing of 'cargar' in member name 'FrmOrden.cargar()' by changing it to 'Cargar'.</Issue>
+            </Message>
+            <Message Id="cargar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="233">Correct the spelling of 'cargar' in member name 'FrmOrden.cargar()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#cboProducto_SelectionChangeCommitted(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToString(System.Decimal)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="301">Because the behavior of 'Convert.ToString(Decimal)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.cboProducto_SelectionChangeCommitted(Object, EventArgs)' with a call to 'Convert.ToString(Decimal, IFormatProvider)'. If the result of 'Convert.ToString(Decimal, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToString(System.Int32)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="300">Because the behavior of 'Convert.ToString(Integer)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.cboProducto_SelectionChangeCommitted(Object, EventArgs)' with a call to 'Convert.ToString(Integer, IFormatProvider)'. If the result of 'Convert.ToString(Integer, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="299">Because the behavior of 'Convert.ToString(String)' could vary based on the current user's locale settings, replace this call in 'FrmOrden.cboProducto_SelectionChangeCommitted(Object, EventArgs)' with a call to 'Convert.ToString(String, IFormatProvider)'. If the result of 'Convert.ToString(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#crearDetalleLocal()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="crear" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="276">Correct the casing of 'crear' in member name 'FrmOrden.crearDetalleLocal()' by changing it to 'Crear'.</Issue>
+            </Message>
+            <Message Id="Detalle" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="276">Correct the spelling of 'Detalle' in member name 'FrmOrden.crearDetalleLocal()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="crear" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="276">Correct the spelling of 'crear' in member name 'FrmOrden.crearDetalleLocal()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FrmOrden_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="19">Because the behavior of 'String.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FrmOrden.FrmOrden_Load(Object, EventArgs)' with a call to 'String.ToUpper(CultureInfo)'. If the result of 'String.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#limpia()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="limpia" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="223">Correct the casing of 'limpia' in member name 'FrmOrden.limpia()' by changing it to 'Limpia'.</Issue>
+            </Message>
+            <Message Id="limpia" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="223">Correct the spelling of 'limpia' in member name 'FrmOrden.limpia()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MostrarBotones()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Botones" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="26">Correct the spelling of 'Botones' in member name 'FrmOrden.MostrarBotones()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Mostrar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="26">Correct the spelling of 'Mostrar' in member name 'FrmOrden.MostrarBotones()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#validaciones()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="validaciones" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="200">Correct the casing of 'validaciones' in member name 'FrmOrden.validaciones()' by changing it to 'Validaciones'.</Issue>
+            </Message>
+            <Message Id="validaciones" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmOrden.vb" Line="200">Correct the spelling of 'validaciones' in member name 'FrmOrden.validaciones()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FrmProducto" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Frm' in type name 'FrmProducto'.</Issue>
+          </Message>
+          <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Producto' in type name 'FrmProducto'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#btnAgregar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Convert.ToString(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="250">Because the behavior of 'Convert.ToString(Object)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.btnAgregar_Click(Object, EventArgs)' with a call to 'Convert.ToString(Object, IFormatProvider)'. If the result of 'Convert.ToString(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnGrabar_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="52">Modify 'FrmProducto.btnGrabar_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDecimal(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="34">Because the behavior of 'Convert.ToDecimal(String)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToDecimal(String, IFormatProvider)'. If the result of 'Convert.ToDecimal(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="30">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="33">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToString(System.Int32)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="52">Because the behavior of 'Convert.ToString(Integer)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.btnGrabar_Click(Object, EventArgs)' with a call to 'Convert.ToString(Integer, IFormatProvider)'. If the result of 'Convert.ToString(Integer, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="50">Change 'FrmProducto.btnGrabar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="55">Change 'FrmProducto.btnGrabar_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="84">Modify 'FrmProducto.Button2_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDecimal(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="67">Because the behavior of 'Convert.ToDecimal(String)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.Button2_Click(Object, EventArgs)' with a call to 'Convert.ToDecimal(String, IFormatProvider)'. If the result of 'Convert.ToDecimal(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="63">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.Button2_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="66">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.Button2_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToString(System.Int32)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="84">Because the behavior of 'Convert.ToString(Integer)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.Button2_Click(Object, EventArgs)' with a call to 'Convert.ToString(Integer, IFormatProvider)'. If the result of 'Convert.ToString(Integer, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="82">Change 'FrmProducto.Button2_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="87">Change 'FrmProducto.Button2_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Button3_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="102">Modify 'FrmProducto.Button3_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="96">Because the behavior of 'Convert.ToInt32(String)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.Button3_Click(Object, EventArgs)' with a call to 'Convert.ToInt32(String, IFormatProvider)'. If the result of 'Convert.ToInt32(String, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="101">Change 'FrmProducto.Button3_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="105">Change 'FrmProducto.Button3_Click(Object, EventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#cargar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="cargar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="11">Correct the casing of 'cargar' in member name 'FrmProducto.cargar()' by changing it to 'Cargar'.</Issue>
+            </Message>
+            <Message Id="cargar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="11">Correct the spelling of 'cargar' in member name 'FrmProducto.cargar()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Form1_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="19">Because the behavior of 'String.ToUpper()' could vary based on the current user's locale settings, replace this call in 'FrmProducto.Form1_Load(Object, EventArgs)' with a call to 'String.ToUpper(CultureInfo)'. If the result of 'String.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToString(System.Int32)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="21">Because the behavior of 'Convert.ToString(Integer)' could vary based on the current user's locale settings, replace this call in 'FrmProducto.Form1_Load(Object, EventArgs)' with a call to 'Convert.ToString(Integer, IFormatProvider)'. If the result of 'Convert.ToString(Integer, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#limpiar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="limpiar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="129">Correct the casing of 'limpiar' in member name 'FrmProducto.limpiar()' by changing it to 'Limpiar'.</Issue>
+            </Message>
+            <Message Id="limpiar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="129">Correct the spelling of 'limpiar' in member name 'FrmProducto.limpiar()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MostrarBotones()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Botones" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="160">Correct the spelling of 'Botones' in member name 'FrmProducto.MostrarBotones()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Mostrar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="160">Correct the spelling of 'Mostrar' in member name 'FrmProducto.MostrarBotones()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Validaciones()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2012-07-02 16:42:12Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Program Files\NTIER-WF\UI\UserInterface" File="FrmProducto.vb" Line="139">'FrmProducto.Validaciones()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182127(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182264(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182137(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182240(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/bb264492(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182156(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
+   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
+   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/bb385967(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182278(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306">
+   <Name>Set locale for data types</Name>
+   <Description>In most cases, Locale should be explicitly set to CultureInfo.InvariantCulture on DataSet and DataTable instances. Upon creation of a DataSet or DataTable instance, the Locale is set to the current culture. In most cases, the Locale should be set to CultureInfo.InvariantCulture to guarantee proper sorting behavior in all cultures.</Description>
+   <Resolution Name="Default">Be sure to set the {0} Locale property wherever {1} creates an instance of that type.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182188(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+   <Name>Specify CultureInfo</Name>
+   <Description>If an overload exists that takes a CultureInfo argument, it should always be called in favor of an overload that does not. The CultureInfo type contains culture-specific information required for performing numeric and string operations, such as casing, formatting, and string comparisons. In scenarios where conversion and parsing behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182189(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182190(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+   <Name>Specify MessageBoxOptions</Name>
+   <Description>In order to run correctly on right-to-left systems, all calls to MessageBox.Show should use the overload that specifies MessageBoxOptions as an argument. Programs should detect whether they are running on a right-to-left system at run-time and pass the appropriate MessageBoxOptions value in order to display correctly.</Description>
+   <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182191(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>Use preferred terms</Name>
+   <Description>Use preferred terms over deprecated alternates.</Description>
+   <Resolution Name="Type">Replace the term '{0}' in type name {1} with the preferred alternate '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182258(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

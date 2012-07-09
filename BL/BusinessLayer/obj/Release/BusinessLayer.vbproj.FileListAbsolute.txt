@@ -1,0 +1,15 @@
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Release\ResolveAssemblyReference.cache
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Release\BusinessLayer.Resources.resources
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Release\BusinessLayer.vbproj.GenerateResource.Cache
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\BusinessLayer.dll
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\BusinessLayer.pdb
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\BusinessLayer.xml
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\BusinessEntities.dll
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\DataAccessLayer.dll
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\DataAccessLayer.pdb
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\DataAccessLayer.xml
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\BusinessEntities.pdb
+D:\Program Files\NTIER-WF\BL\BusinessLayer\bin\Release\BusinessEntities.xml
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Release\BusinessLayer.dll
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Release\BusinessLayer.xml
+D:\Program Files\NTIER-WF\BL\BusinessLayer\obj\Release\BusinessLayer.pdb

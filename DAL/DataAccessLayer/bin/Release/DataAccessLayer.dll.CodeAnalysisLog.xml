@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="D:\Program Files\NTIER-WF\DAL\DataAccessLayer\bin\Release\DataAccessLayer.dll">
+   <Modules>
+    <Module Name="dataaccesslayer.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'DataAccessLayer.dll' with a strong name key.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'DataAccessLayer.dll' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Because assembly 'DataAccessLayer.dll' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="DataAccessLayer">
+       <Types>
+        <Type Name="ClienteDAO" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DAO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DAO' in type name 'ClienteDAO' by changing it to 'Dao'.</Issue>
+          </Message>
+          <Message Id="Cliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Cliente' in type name 'ClienteDAO'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#BuscarCliente(BusinessEntities.ClienteBE)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Buscar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="59">Correct the spelling of 'Buscar' in member name 'ClienteDAO.BuscarCliente(ClienteBE)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Cliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="59">Correct the spelling of 'Cliente' in member name 'ClienteDAO.BuscarCliente(ClienteBE)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="ocliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="59">In method 'ClienteDAO.BuscarCliente(ClienteBE)', correct the spelling of 'ocliente' in parameter name 'ocliente' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="59">The 'this' parameter (or 'Me' in Visual Basic) of 'ClienteDAO.BuscarCliente(ClienteBE)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="65">Be sure to set the DataTable Locale property wherever 'ClienteDAO.BuscarCliente(ClienteBE)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#eliminarCliente(BusinessEntities.ClienteBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="eliminar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="100">Correct the casing of 'eliminar' in member name 'ClienteDAO.eliminarCliente(ClienteBE, String)' by changing it to 'Eliminar'.</Issue>
+            </Message>
+            <Message Id="Cliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="100">Correct the spelling of 'Cliente' in member name 'ClienteDAO.eliminarCliente(ClienteBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="eliminar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="100">Correct the spelling of 'eliminar' in member name 'ClienteDAO.eliminarCliente(ClienteBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="100">In method 'ClienteDAO.eliminarCliente(ClienteBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="ocliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="100">In method 'ClienteDAO.eliminarCliente(ClienteBE, String)', correct the spelling of 'ocliente' in parameter name 'ocliente' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="100">The 'this' parameter (or 'Me' in Visual Basic) of 'ClienteDAO.eliminarCliente(ClienteBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#existe(BusinessEntities.ClienteBE)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="existe" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="133">Correct the casing of 'existe' in member name 'ClienteDAO.existe(ClienteBE)' by changing it to 'Existe'.</Issue>
+            </Message>
+            <Message Id="existe" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="133">Correct the spelling of 'existe' in member name 'ClienteDAO.existe(ClienteBE)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="ocliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="133">In method 'ClienteDAO.existe(ClienteBE)', correct the spelling of 'ocliente' in parameter name 'ocliente' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="133">The 'this' parameter (or 'Me' in Visual Basic) of 'ClienteDAO.existe(ClienteBE)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="140">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'ClienteDAO.existe(ClienteBE)' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#insertarCliente(BusinessEntities.ClienteBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="insertar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="30">Correct the casing of 'insertar' in member name 'ClienteDAO.insertarCliente(ClienteBE, String)' by changing it to 'Insertar'.</Issue>
+            </Message>
+            <Message Id="Cliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="30">Correct the spelling of 'Cliente' in member name 'ClienteDAO.insertarCliente(ClienteBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="30">In method 'ClienteDAO.insertarCliente(ClienteBE, String)', correct the spelling of 'Cliente' in parameter name 'oCliente' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="30">In method 'ClienteDAO.insertarCliente(ClienteBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="insertar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="30">Correct the spelling of 'insertar' in member name 'ClienteDAO.insertarCliente(ClienteBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="30">In method 'ClienteDAO.insertarCliente(ClienteBE, String)', correct the spelling of 'o' in parameter name 'oCliente' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="30">The 'this' parameter (or 'Me' in Visual Basic) of 'ClienteDAO.insertarCliente(ClienteBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="45">Because the behavior of 'Integer.ToString()' could vary based on the current user's locale settings, replace this call in 'ClienteDAO.insertarCliente(ClienteBE, String)' with a call to 'Integer.ToString(IFormatProvider)'. If the result of 'Integer.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#listarClientes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="listar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="8">Correct the casing of 'listar' in member name 'ClienteDAO.listarClientes()' by changing it to 'Listar'.</Issue>
+            </Message>
+            <Message Id="Clientes" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="8">Correct the spelling of 'Clientes' in member name 'ClienteDAO.listarClientes()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="listar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="8">Correct the spelling of 'listar' in member name 'ClienteDAO.listarClientes()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="8">The 'this' parameter (or 'Me' in Visual Basic) of 'ClienteDAO.listarClientes()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="11">Be sure to set the DataTable Locale property wherever 'ClienteDAO.listarClientes()' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#modificarCliente(BusinessEntities.ClienteBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="modificar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="71">Correct the casing of 'modificar' in member name 'ClienteDAO.modificarCliente(ClienteBE, String)' by changing it to 'Modificar'.</Issue>
+            </Message>
+            <Message Id="Cliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="71">Correct the spelling of 'Cliente' in member name 'ClienteDAO.modificarCliente(ClienteBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="71">In method 'ClienteDAO.modificarCliente(ClienteBE, String)', correct the spelling of 'Cliente' in parameter name 'oCliente' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="71">In method 'ClienteDAO.modificarCliente(ClienteBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="modificar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="71">Correct the spelling of 'modificar' in member name 'ClienteDAO.modificarCliente(ClienteBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="71">In method 'ClienteDAO.modificarCliente(ClienteBE, String)', correct the spelling of 'o' in parameter name 'oCliente' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="71">The 'this' parameter (or 'Me' in Visual Basic) of 'ClienteDAO.modificarCliente(ClienteBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="87">Because the behavior of 'Integer.ToString()' could vary based on the current user's locale settings, replace this call in 'ClienteDAO.modificarCliente(ClienteBE, String)' with a call to 'Integer.ToString(IFormatProvider)'. If the result of 'Integer.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#obtenerIdCliente()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="21">Modify 'ClienteDAO.obtenerIdCliente()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="17">Correct the casing of 'obtener' in member name 'ClienteDAO.obtenerIdCliente()' by changing it to 'Obtener'.</Issue>
+            </Message>
+            <Message Id="Cliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="17">Correct the spelling of 'Cliente' in member name 'ClienteDAO.obtenerIdCliente()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="17">Correct the spelling of 'obtener' in member name 'ClienteDAO.obtenerIdCliente()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="17">The 'this' parameter (or 'Me' in Visual Basic) of 'ClienteDAO.obtenerIdCliente()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="21">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'ClienteDAO.obtenerIdCliente()' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#obtenerPais()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="124">Correct the casing of 'obtener' in member name 'ClienteDAO.obtenerPais()' by changing it to 'Obtener'.</Issue>
+            </Message>
+            <Message Id="Pais" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="124">Correct the spelling of 'Pais' in member name 'ClienteDAO.obtenerPais()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="124">Correct the spelling of 'obtener' in member name 'ClienteDAO.obtenerPais()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="124">The 'this' parameter (or 'Me' in Visual Basic) of 'ClienteDAO.obtenerPais()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ClienteDAO.vb" Line="127">Be sure to set the DataTable Locale property wherever 'ClienteDAO.obtenerPais()' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Conexion" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Conexion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Conexion' in type name 'Conexion'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ModuloConexion" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'ModuloConexion' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="OpcionDAO" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DAO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DAO' in type name 'OpcionDAO' by changing it to 'Dao'.</Issue>
+          </Message>
+          <Message Id="Opcion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Opcion' in type name 'OpcionDAO'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#cn" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'OpcionDAO.cn' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#obtenerOpcion()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OpcionDAO.vb" Line="8">Correct the casing of 'obtener' in member name 'OpcionDAO.obtenerOpcion()' by changing it to 'Obtener'.</Issue>
+            </Message>
+            <Message Id="Opcion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OpcionDAO.vb" Line="8">Correct the spelling of 'Opcion' in member name 'OpcionDAO.obtenerOpcion()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OpcionDAO.vb" Line="8">Correct the spelling of 'obtener' in member name 'OpcionDAO.obtenerOpcion()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OpcionDAO.vb" Line="8">The 'this' parameter (or 'Me' in Visual Basic) of 'OpcionDAO.obtenerOpcion()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OpcionDAO.vb" Line="11">Be sure to set the DataTable Locale property wherever 'OpcionDAO.obtenerOpcion()' creates an instance of that type.</Issue>
+            </Message>
+            <Message Id="cn" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OpcionDAO.vb" Line="8">'cn', a variable declared in 'OpcionDAO.obtenerOpcion()', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OrdenDAO" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DAO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DAO' in type name 'OrdenDAO' by changing it to 'Dao'.</Issue>
+          </Message>
+          <Message Id="Orden" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Orden' in type name 'OrdenDAO'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#actualizar(BusinessEntities.OrdenBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="actualizar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="72">Correct the casing of 'actualizar' in member name 'OrdenDAO.actualizar(OrdenBE, String)' by changing it to 'Actualizar'.</Issue>
+            </Message>
+            <Message Id="Orden" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="72">In method 'OrdenDAO.actualizar(OrdenBE, String)', correct the spelling of 'Orden' in parameter name 'oOrden' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="actualizar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="72">Correct the spelling of 'actualizar' in member name 'OrdenDAO.actualizar(OrdenBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="72">In method 'OrdenDAO.actualizar(OrdenBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="72">In method 'OrdenDAO.actualizar(OrdenBE, String)', correct the spelling of 'o' in parameter name 'oOrden' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="72">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.actualizar(OrdenBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#eliminar(BusinessEntities.OrdenBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="eliminar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="102">Correct the casing of 'eliminar' in member name 'OrdenDAO.eliminar(OrdenBE, String)' by changing it to 'Eliminar'.</Issue>
+            </Message>
+            <Message Id="Orden" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="102">In method 'OrdenDAO.eliminar(OrdenBE, String)', correct the spelling of 'Orden' in parameter name 'oOrden' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="eliminar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="102">Correct the spelling of 'eliminar' in member name 'OrdenDAO.eliminar(OrdenBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="102">In method 'OrdenDAO.eliminar(OrdenBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="102">In method 'OrdenDAO.eliminar(OrdenBE, String)', correct the spelling of 'o' in parameter name 'oOrden' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="102">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.eliminar(OrdenBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="112">Because the behavior of 'Integer.ToString()' could vary based on the current user's locale settings, replace this call in 'OrdenDAO.eliminar(OrdenBE, String)' with a call to 'Integer.ToString(IFormatProvider)'. If the result of 'Integer.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FiltrarFechas(BusinessEntities.OrdenBE)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Fechas" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="137">Correct the spelling of 'Fechas' in member name 'OrdenDAO.FiltrarFechas(OrdenBE)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Filtrar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="137">Correct the spelling of 'Filtrar' in member name 'OrdenDAO.FiltrarFechas(OrdenBE)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Orden" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="137">In method 'OrdenDAO.FiltrarFechas(OrdenBE)', correct the spelling of 'Orden' in parameter name 'oOrden' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="137">In method 'OrdenDAO.FiltrarFechas(OrdenBE)', correct the spelling of 'o' in parameter name 'oOrden' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="137">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.FiltrarFechas(OrdenBE)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="145">Be sure to set the DataTable Locale property wherever 'OrdenDAO.FiltrarFechas(OrdenBE)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#insertar(BusinessEntities.OrdenBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="insertar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="30">Correct the casing of 'insertar' in member name 'OrdenDAO.insertar(OrdenBE, String)' by changing it to 'Insertar'.</Issue>
+            </Message>
+            <Message Id="Orden" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="30">In method 'OrdenDAO.insertar(OrdenBE, String)', correct the spelling of 'Orden' in parameter name 'oOrden' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="30">In method 'OrdenDAO.insertar(OrdenBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="insertar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="30">Correct the spelling of 'insertar' in member name 'OrdenDAO.insertar(OrdenBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="30">In method 'OrdenDAO.insertar(OrdenBE, String)', correct the spelling of 'o' in parameter name 'oOrden' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="30">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.insertar(OrdenBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="44">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'OrdenDAO.insertar(OrdenBE, String)' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="59">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'OrdenDAO.insertar(OrdenBE, String)' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="oDetalle" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="30">'oDetalle', a variable declared in 'OrdenDAO.insertar(OrdenBE, String)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Listar()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Listar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="21">Correct the spelling of 'Listar' in member name 'OrdenDAO.Listar()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="21">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.Listar()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="24">Be sure to set the DataTable Locale property wherever 'OrdenDAO.Listar()' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#listaxOrden(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="listax" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="151">Correct the casing of 'listax' in member name 'OrdenDAO.listaxOrden(String)' by changing it to 'Listax'.</Issue>
+            </Message>
+            <Message Id="Orden" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="151">Correct the spelling of 'Orden' in member name 'OrdenDAO.listaxOrden(String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="cliente" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="151">In method 'OrdenDAO.listaxOrden(String)', correct the spelling of 'cliente' in parameter name 'cliente' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="listax" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="151">Correct the spelling of 'listax' in member name 'OrdenDAO.listaxOrden(String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="151">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.listaxOrden(String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="157">Be sure to set the DataTable Locale property wherever 'OrdenDAO.listaxOrden(String)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ObtenerId()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="12">Modify 'OrdenDAO.ObtenerId()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="Obtener" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="8">Correct the spelling of 'Obtener' in member name 'OrdenDAO.ObtenerId()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="8">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.ObtenerId()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="12">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'OrdenDAO.ObtenerId()' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#obtenerPrecio(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="125">Correct the casing of 'obtener' in member name 'OrdenDAO.obtenerPrecio(Integer)' by changing it to 'Obtener'.</Issue>
+            </Message>
+            <Message Id="Precio" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="125">Correct the spelling of 'Precio' in member name 'OrdenDAO.obtenerPrecio(Integer)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="125">Correct the spelling of 'obtener' in member name 'OrdenDAO.obtenerPrecio(Integer)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="125">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.obtenerPrecio(Integer)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToDecimal(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="132">Because the behavior of 'Convert.ToDecimal(Object)' could vary based on the current user's locale settings, replace this call in 'OrdenDAO.obtenerPrecio(Integer)' with a call to 'Convert.ToDecimal(Object, IFormatProvider)'. If the result of 'Convert.ToDecimal(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#obtenerStock(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="163">Correct the casing of 'obtener' in member name 'OrdenDAO.obtenerStock(Integer)' by changing it to 'Obtener'.</Issue>
+            </Message>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="163">Correct the spelling of 'obtener' in member name 'OrdenDAO.obtenerStock(Integer)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="163">The 'this' parameter (or 'Me' in Visual Basic) of 'OrdenDAO.obtenerStock(Integer)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="OrdenDAO.vb" Line="170">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'OrdenDAO.obtenerStock(Integer)' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#oDetalle" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'OrdenDAO.oDetalle' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ProductoDAO" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DAO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DAO' in type name 'ProductoDAO' by changing it to 'Dao'.</Issue>
+          </Message>
+          <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Producto' in type name 'ProductoDAO'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#actualizar(BusinessEntities.ProductoBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="actualizar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="77">Correct the casing of 'actualizar' in member name 'ProductoDAO.actualizar(ProductoBE, String)' by changing it to 'Actualizar'.</Issue>
+            </Message>
+            <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="77">In method 'ProductoDAO.actualizar(ProductoBE, String)', correct the spelling of 'Producto' in parameter name 'oProducto' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="actualizar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="77">Correct the spelling of 'actualizar' in member name 'ProductoDAO.actualizar(ProductoBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="77">In method 'ProductoDAO.actualizar(ProductoBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="77">In method 'ProductoDAO.actualizar(ProductoBE, String)', correct the spelling of 'o' in parameter name 'oProducto' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="77">The 'this' parameter (or 'Me' in Visual Basic) of 'ProductoDAO.actualizar(ProductoBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#buscar(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Nombre" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="68">In member 'ProductoDAO.buscar(String)', correct the casing of 'Nombre' in parameter name 'NombreProducto' by changing it to 'nombre'.</Issue>
+            </Message>
+            <Message Id="buscar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="68">Correct the casing of 'buscar' in member name 'ProductoDAO.buscar(String)' by changing it to 'Buscar'.</Issue>
+            </Message>
+            <Message Id="Nombre" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="68">In method 'ProductoDAO.buscar(String)', correct the spelling of 'Nombre' in parameter name 'NombreProducto' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="68">In method 'ProductoDAO.buscar(String)', correct the spelling of 'Producto' in parameter name 'NombreProducto' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="buscar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="68">Correct the spelling of 'buscar' in member name 'ProductoDAO.buscar(String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="68">The 'this' parameter (or 'Me' in Visual Basic) of 'ProductoDAO.buscar(String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="71">Be sure to set the DataTable Locale property wherever 'ProductoDAO.buscar(String)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#eliminar(BusinessEntities.ProductoBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="eliminar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="106">Correct the casing of 'eliminar' in member name 'ProductoDAO.eliminar(ProductoBE, String)' by changing it to 'Eliminar'.</Issue>
+            </Message>
+            <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="106">In method 'ProductoDAO.eliminar(ProductoBE, String)', correct the spelling of 'Producto' in parameter name 'oProducto' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="eliminar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="106">Correct the spelling of 'eliminar' in member name 'ProductoDAO.eliminar(ProductoBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="106">In method 'ProductoDAO.eliminar(ProductoBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="106">In method 'ProductoDAO.eliminar(ProductoBE, String)', correct the spelling of 'o' in parameter name 'oProducto' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="106">The 'this' parameter (or 'Me' in Visual Basic) of 'ProductoDAO.eliminar(ProductoBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="117">Because the behavior of 'Integer.ToString()' could vary based on the current user's locale settings, replace this call in 'ProductoDAO.eliminar(ProductoBE, String)' with a call to 'Integer.ToString(IFormatProvider)'. If the result of 'Integer.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#insertar(BusinessEntities.ProductoBE,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="insertar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="26">Correct the casing of 'insertar' in member name 'ProductoDAO.insertar(ProductoBE, String)' by changing it to 'Insertar'.</Issue>
+            </Message>
+            <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="26">In method 'ProductoDAO.insertar(ProductoBE, String)', correct the spelling of 'Producto' in parameter name 'oProducto' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="flagaccion" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="26">In method 'ProductoDAO.insertar(ProductoBE, String)', correct the spelling of 'flagaccion' in parameter name 'flagaccion' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="insertar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="26">Correct the spelling of 'insertar' in member name 'ProductoDAO.insertar(ProductoBE, String)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="26">In method 'ProductoDAO.insertar(ProductoBE, String)', correct the spelling of 'o' in parameter name 'oProducto' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="26">The 'this' parameter (or 'Me' in Visual Basic) of 'ProductoDAO.insertar(ProductoBE, String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#listarProductos()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="listar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="16">Correct the casing of 'listar' in member name 'ProductoDAO.listarProductos()' by changing it to 'Listar'.</Issue>
+            </Message>
+            <Message Id="Productos" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="16">Correct the spelling of 'Productos' in member name 'ProductoDAO.listarProductos()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="listar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="16">Correct the spelling of 'listar' in member name 'ProductoDAO.listarProductos()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="16">The 'this' parameter (or 'Me' in Visual Basic) of 'ProductoDAO.listarProductos()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="20">Be sure to set the DataTable Locale property wherever 'ProductoDAO.listarProductos()' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ListarTipoProducto()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Listar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="7">Correct the spelling of 'Listar' in member name 'ProductoDAO.ListarTipoProducto()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="7">Correct the spelling of 'Producto' in member name 'ProductoDAO.ListarTipoProducto()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Tipo" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="7">Correct the spelling of 'Tipo' in member name 'ProductoDAO.ListarTipoProducto()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="7">The 'this' parameter (or 'Me' in Visual Basic) of 'ProductoDAO.ListarTipoProducto()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="10">Be sure to set the DataTable Locale property wherever 'ProductoDAO.ListarTipoProducto()' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#obtenerIdProducto()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="59">Modify 'ProductoDAO.obtenerIdProducto()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="55">Correct the casing of 'obtener' in member name 'ProductoDAO.obtenerIdProducto()' by changing it to 'Obtener'.</Issue>
+            </Message>
+            <Message Id="Producto" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="55">Correct the spelling of 'Producto' in member name 'ProductoDAO.obtenerIdProducto()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="obtener" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="55">Correct the spelling of 'obtener' in member name 'ProductoDAO.obtenerIdProducto()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="55">The 'this' parameter (or 'Me' in Visual Basic) of 'ProductoDAO.obtenerIdProducto()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.Convert.ToInt32(System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="ProductoDAO.vb" Line="59">Because the behavior of 'Convert.ToInt32(Object)' could vary based on the current user's locale settings, replace this call in 'ProductoDAO.obtenerIdProducto()' with a call to 'Convert.ToInt32(Object, IFormatProvider)'. If the result of 'Convert.ToInt32(Object, IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UsuarioDAO" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DAO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DAO' in type name 'UsuarioDAO' by changing it to 'Dao'.</Issue>
+          </Message>
+          <Message Id="Usuario" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Usuario' in type name 'UsuarioDAO'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#autenticar(BusinessEntities.UsuarioBE)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="autenticar" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="UsuarioDAO.vb" Line="7">Correct the casing of 'autenticar' in member name 'UsuarioDAO.autenticar(UsuarioBE)' by changing it to 'Autenticar'.</Issue>
+            </Message>
+            <Message Id="Usuario" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="UsuarioDAO.vb" Line="7">In method 'UsuarioDAO.autenticar(UsuarioBE)', correct the spelling of 'Usuario' in parameter name 'oUsuario' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="autenticar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="UsuarioDAO.vb" Line="7">Correct the spelling of 'autenticar' in member name 'UsuarioDAO.autenticar(UsuarioBE)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="o" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="UsuarioDAO.vb" Line="7">In method 'UsuarioDAO.autenticar(UsuarioBE)', correct the spelling of 'o' in parameter name 'oUsuario' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2012-07-02 16:44:20Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Program Files\NTIER-WF\DAL\DataAccessLayer" File="UsuarioDAO.vb" Line="7">The 'this' parameter (or 'Me' in Visual Basic) of 'UsuarioDAO.autenticar(UsuarioBE)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182127(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>Avoid uninstantiated internal classes</Name>
+   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
+   <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182265(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms245042(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182137(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="MemberParameter">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'.</Resolution>
+   <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182240(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/bb264492(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182156(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
+   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
+   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/bb385967(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms245046(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306">
+   <Name>Set locale for data types</Name>
+   <Description>In most cases, Locale should be explicitly set to CultureInfo.InvariantCulture on DataSet and DataTable instances. Upon creation of a DataSet or DataTable instance, the Locale is set to the current culture. In most cases, the Locale should be set to CultureInfo.InvariantCulture to guarantee proper sorting behavior in all cultures.</Description>
+   <Resolution Name="Default">Be sure to set the {0} Locale property wherever {1} creates an instance of that type.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182188(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182190(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Variable names should not match field names</Name>
+   <Description>Instance field and variable names should not be identical within the same scope.</Description>
+   <Resolution Name="Local">{0}, a variable declared in {1}, has the same name as an instance field on the type. Change the name of one of these items.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182216(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="MaintainabilityRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
